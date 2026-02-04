@@ -135,7 +135,7 @@ print("break 示例:")
 for i in range(10):
     if i == 5:
         break
-    print(i, end=" ")  # 0 1 2 3 4
+    print(i, end="     ")  # 0 1 2 3 4
 print()
 
 # continue - 跳过当前迭代

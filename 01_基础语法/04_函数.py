@@ -14,6 +14,8 @@ def greet(name):
     """
     return f"你好, {name}!"
 
+def ask_name(name):
+    return f"你是谁{name}"
 # 调用函数
 message = greet("张三")
 print(message)
@@ -189,7 +191,7 @@ def scope_demo():
     print(f"函数内访问局部变量: {local_var}")
     
     # 修改全局变量需要使用 global 关键字
-    global global_var
+    # global global_var
     global_var = "修改后的全局变量"
 
 scope_demo()
@@ -204,6 +206,9 @@ print("\n=== 函数作为对象 ===")
 def apply_operation(x, y, operation):
     """应用指定的操作"""
     return operation(x, y)
+
+def apply_my_operation(x,operation):    
+    return operation(x)
 
 # 定义一些操作函数
 def add(a, b):
